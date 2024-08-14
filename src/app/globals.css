@@ -2,32 +2,280 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 222.2 84% 4.9%;
+    --card: 0 0% 100%;
+    --card-foreground: 222.2 84% 4.9%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 222.2 84% 4.9%;
+    --primary: 222.2 47.4% 11.2%;
+    --primary-foreground: 210 40% 98%;
+    --secondary: 210 40% 96.1%;
+    --secondary-foreground: 222.2 47.4% 11.2%;
+    --muted: 210 40% 96.1%;
+    --muted-foreground: 215.4 16.3% 46.9%;
+    --accent: 210 40% 96.1%;
+    --accent-foreground: 222.2 47.4% 11.2%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+    --border: 214.3 31.8% 91.4%;
+    --input: 214.3 31.8% 91.4%;
+    --ring: 222.2 84% 4.9%;
+    --radius: 0.5rem;
+    --chart-1: 12 76% 61%;
+    --chart-2: 173 58% 39%;
+    --chart-3: 197 37% 24%;
+    --chart-4: 43 74% 66%;
+    --chart-5: 27 87% 67%;
+  }
+
+  .dark {
+    --background: 222.2 84% 4.9%;
+    --foreground: 210 40% 98%;
+    --card: 222.2 84% 4.9%;
+    --card-foreground: 210 40% 98%;
+    --popover: 222.2 84% 4.9%;
+    --popover-foreground: 210 40% 98%;
+    --primary: 210 40% 98%;
+    --primary-foreground: 222.2 47.4% 11.2%;
+    --secondary: 217.2 32.6% 17.5%;
+    --secondary-foreground: 210 40% 98%;
+    --muted: 217.2 32.6% 17.5%;
+    --muted-foreground: 215 20.2% 65.1%;
+    --accent: 217.2 32.6% 17.5%;
+    --accent-foreground: 210 40% 98%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+    --border: 217.2 32.6% 17.5%;
+    --input: 217.2 32.6% 17.5%;
+    --ring: 212.7 26.8% 83.9%;
+    --chart-1: 220 70% 50%;
+    --chart-2: 160 60% 45%;
+    --chart-3: 30 80% 55%;
+    --chart-4: 280 65% 60%;
+    --chart-5: 340 75% 55%;
+  }
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+@layer base {
+  * {
+    @apply border-border;
   }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+/* styles/globals.css */
+@font-face {
+  font-family: "Epilogue-Thin";
+  src: url("/public/fonts/Epilogue-Thin.woff2") format("woff2"),
+    url("/public/fonts/Epilogue-Thin.woff") format("woff"),
+    url("/public/fonts/Epilogue-Thin.ttf") format("truetype");
+  font-weight: 100;
+  font-display: swap;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Epilogue-ThinItalic";
+  src: url("/public/fonts/Epilogue-ThinItalic.woff2") format("woff2"),
+    url("/public/fonts/Epilogue-ThinItalic.woff") format("woff"),
+    url("/public/fonts/Epilogue-ThinItalic.ttf") format("truetype");
+  font-weight: 100;
+  font-display: swap;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Epilogue-ExtraLight";
+  src: url("/public/fonts/Epilogue-ExtraLight.woff2") format("woff2"),
+    url("/public/fonts/Epilogue-ExtraLight.woff") format("woff"),
+    url("/public/fonts/Epilogue-ExtraLight.ttf") format("truetype");
+  font-weight: 200;
+  font-display: swap;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Epilogue-ExtraLightItalic";
+  src: url("/public/fonts/epilogue/Epilogue-ExtraLight.woff2") format("woff2"),
+    url("/public/fonts/Epilogue-ExtraLightItalic.woff") format("woff"),
+    url("/public/fonts/Epilogue-ExtraLightItalic.ttf") format("truetype");
+  font-weight: 200;
+  font-display: swap;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Epilogue-Light";
+  src: url("/public/fonts/Epilogue-Light.woff2") format("woff2"),
+    url("/public/fonts/Epilogue-Light.woff") format("woff"),
+    url("/public/fonts/Epilogue-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-display: swap;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Epilogue-LightItalic";
+  src: url("/public/fonts/Epilogue-LightItalic.woff2") format("woff2"),
+    url("/public/fonts/Epilogue-LightItalic.woff") format("woff"),
+    url("/public/fonts/Epilogue-LightItalic.ttf") format("truetype");
+  font-weight: 300;
+  font-display: swap;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Epilogue-Regular";
+  src: url("/public/fonts/Epilogue-Regular.woff2") format("woff2"),
+    url("/public/fonts/Epilogue-Regular.woff") format("woff"),
+    url("/public/fonts/Epilogue-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-display: swap;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Epilogue-Italic";
+  src: url("/public/fonts/Epilogue-Italic.woff2") format("woff2"),
+    url("/public/fonts/Epilogue-Italic.woff") format("woff"),
+    url("/public/fonts/Epilogue-Italic.ttf") format("truetype");
+  font-weight: 400;
+  font-display: swap;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Epilogue-Medium";
+  src: url("/public/fonts/Epilogue-Medium.woff2") format("woff2"),
+    url("/public/fonts/Epilogue-Medium.woff") format("woff"),
+    url("/public/fonts/Epilogue-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-display: swap;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Epilogue-MediumItalic";
+  src: url("/public/fonts/Epilogue-MediumItalic.woff2") format("woff2"),
+    url("/public/fonts/Epilogue-MediumItalic.woff") format("woff"),
+    url("/public/fonts/Epilogue-MediumItalic.ttf") format("truetype");
+  font-weight: 500;
+  font-display: swap;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Epilogue-SemiBold";
+  src: url("/public/fonts/Epilogue-SemiBold.woff2") format("woff2"),
+    url("/public/fonts/Epilogue-SemiBold.woff") format("woff"),
+    url("/public/fonts/Epilogue-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+  font-display: swap;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Epilogue-SemiBoldItalic";
+  src: url("/public/fonts/Epilogue-SemiBoldItalic.woff2") format("woff2"),
+    url("/public/fonts/Epilogue-SemiBoldItalic.woff") format("woff"),
+    url("/public/fonts/Epilogue-SemiBoldItalic.ttf") format("truetype");
+  font-weight: 600;
+  font-display: swap;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Epilogue-Bold";
+  src: url("/public/fonts/Epilogue-Bold.woff2") format("woff2"),
+    url("/public/fonts/Epilogue-Bold.woff") format("woff"),
+    url("/public/fonts/Epilogue-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-display: swap;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Epilogue-BoldItalic";
+  src: url("/public/fonts/Epilogue-BoldItalic.woff2") format("woff2"),
+    url("/public/fonts/Epilogue-BoldItalic.woff") format("woff"),
+    url("/public/fonts/Epilogue-BoldItalic.ttf") format("truetype");
+  font-weight: 700;
+  font-display: swap;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Epilogue-ExtraBold";
+  src: url("/public/fonts/Epilogue-ExtraBold.woff2") format("woff2"),
+    url("/public/fonts/Epilogue-ExtraBold.woff") format("woff"),
+    url("/public/fonts/Epilogue-ExtraBold.ttf") format("truetype");
+  font-weight: 800;
+  font-display: swap;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Epilogue-ExtraBoldItalic";
+  src: url("/public/fonts/Epilogue-ExtraBoldItalic.woff2") format("woff2"),
+    url("/public/fonts/Epilogue-ExtraBoldItalic.woff") format("woff"),
+    url("/public/fonts/Epilogue-ExtraBoldItalic.ttf") format("truetype");
+  font-weight: 800;
+  font-display: swap;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Epilogue-Black";
+  src: url("/public/fonts/Epilogue-Black.woff2") format("woff2"),
+    url("/public/fonts/Epilogue-Black.woff") format("woff"),
+    url("/public/fonts/Epilogue-Black.ttf") format("truetype");
+  font-weight: 900;
+  font-display: swap;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Epilogue-BlackItalic";
+  src: url("/public/fonts/Epilogue-BlackItalic.woff2") format("woff2"),
+    url("/public/fonts/Epilogue-BlackItalic.woff") format("woff"),
+    url("/public/fonts/Epilogue-BlackItalic.ttf") format("truetype");
+  font-weight: 900;
+  font-display: swap;
+  font-style: italic;
+}
+/**
+* This is a variable font
+* You can control variable axes as shown below:
+* font-variation-settings: wght 400.0;
+*
+* available axes:
+'wght' (range from 100.0 to 900.0
+*/
+@font-face {
+  font-family: "Epilogue-Variable";
+  src: url("/public/fonts/Epilogue-Variable.woff2") format("woff2"),
+    url("/public/fonts/Epilogue-Variable.woff") format("woff"),
+    url("/public/fonts/Epilogue-Variable.ttf") format("truetype");
+  font-weight: 100 900;
+  font-display: swap;
+  font-style: normal;
+}
+/**
+* This is a variable font
+* You can control variable axes as shown below:
+* font-variation-settings: wght 400.0;
+*
+* available axes:
+'wght' (range from 100.0 to 900.0
+*/
+@font-face {
+  font-family: "Epilogue-VariableItalic";
+  src: url("/public/fonts/Epilogue-VariableItalic.woff2") format("woff2"),
+    url("/public/fonts/Epilogue-VariableItalic.woff") format("woff"),
+    url("/public/fonts/Epilogue-VariableItalic.ttf") format("truetype");
+  font-weight: 100 900;
+  font-display: swap;
+  font-style: italic;
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  font-family: "Epilogue", sans-serif;
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+body {
+  background-image: url('../app/assests/fullbg.png');
+  background-size: cover; /* or 'contain', depending on your design */
+  background-repeat: no-repeat;
+  /* background-position: center center; */
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
 }
