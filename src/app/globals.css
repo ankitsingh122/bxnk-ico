@@ -66,6 +66,15 @@
   body {
     @apply bg-background text-foreground;
   }
+  body {
+  background-image: url('../app/assests/fullbg.png');
+  background-size: cover; /* or 'contain', depending on your design */
+  background-repeat: no-repeat;
+    /* background-position: center center; */
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+}
 }
 
 /* styles/globals.css */
@@ -270,12 +279,8 @@ body {
   font-family: "Epilogue", sans-serif;
 }
 
-body {
-  background-image: url('../app/assests/fullbg.png');
-  background-size: cover; /* or 'contain', depending on your design */
-  background-repeat: no-repeat;
-  /* background-position: center center; */
-  min-height: 100vh;
-  margin: 0;
-  padding: 0;
+@layer utilities {
+  .custom-shadow {
+    box-shadow: 0px 0px 10.1px 0px rgba(249, 47, 158, 0.8);
+  }
 }

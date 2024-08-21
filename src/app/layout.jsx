@@ -1,9 +1,5 @@
 import { Inter } from "next/font/google";
 import "./globals.css";
-import Header from "./components/Header";
-import Image from "next/image";
-import fullbg from "./assests/fullbg.png"
-
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
@@ -14,18 +10,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-
-        <body >
-          {/* <Image
-            src={fullbg}
-            alt="bg"
-            fill={true}
-            className="object-cover"
-            priority={true}
-          /> */}
-          {children}
-        </body>
-     
+      <body>{children}</body>
     </html>
   );
 }
