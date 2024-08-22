@@ -6,7 +6,7 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion";
 function FAQ() {
-        
+
   return (
     <>
       <div className="xl:px-28 md:px-24 px-10 py-12 bg-black/70">
@@ -48,7 +48,7 @@ function FAQ() {
               className="border px-2 rounded-lg border-gray-700"
               value="item-3"
             >
-              <AccordionTrigger className="hover:no-underline">
+              <AccordionTrigger className="hover:no-underline text-start">
                 Is BXNK regulated?
               </AccordionTrigger>
               <AccordionContent className="text-gray-400">
@@ -62,7 +62,7 @@ function FAQ() {
               className="border px-2 rounded-lg border-gray-700 mt-2"
               value="item-4"
             >
-              <AccordionTrigger className="hover:no-underline">
+              <AccordionTrigger className="hover:no-underline text-start">
                 How secure is my data on BXNK?
               </AccordionTrigger>
               <AccordionContent className="text-gray-400">
@@ -83,7 +83,7 @@ function FAQ() {
               className="border px-2 rounded-lg border-gray-700"
               value="item-1"
             >
-              <AccordionTrigger className="hover:no-underline">
+              <AccordionTrigger className="hover:no-underline text-start">
                 What is the BXNK token?
               </AccordionTrigger>
               <AccordionContent className="text-gray-400">
@@ -111,7 +111,7 @@ function FAQ() {
               className="border px-2 rounded-lg border-gray-700"
               value="item-3"
             >
-              <AccordionTrigger className="hover:no-underline">
+              <AccordionTrigger className="hover:no-underline text-start">
                 What are the fees associated with using BXNK?
               </AccordionTrigger>
               <AccordionContent className="text-gray-400">
@@ -125,7 +125,7 @@ function FAQ() {
               className="border px-2 rounded-lg border-gray-700 mt-2"
               value="item-4"
             >
-              <AccordionTrigger className="hover:no-underline">
+              <AccordionTrigger className="hover:no-underline text-start">
                 Is there a mobile app?
               </AccordionTrigger>
               <AccordionContent className="text-gray-400">
@@ -144,7 +144,7 @@ function FAQ() {
               className="border px-2 rounded-lg border-gray-700"
               value="item-1"
             >
-              <AccordionTrigger className="hover:no-underline">
+              <AccordionTrigger className="hover:no-underline text-start">
                 What blockchain technology does BXNK use?
               </AccordionTrigger>
               <AccordionContent className="text-gray-400">
@@ -172,7 +172,7 @@ function FAQ() {
               className="border px-2 rounded-lg border-gray-700"
               value="item-3"
             >
-              <AccordionTrigger className="hover:no-underline">
+              <AccordionTrigger className="hover:no-underline text-start">
                 Is there a limit to the number of tokens that can be staked or
                 purchased?
               </AccordionTrigger>
@@ -183,20 +183,6 @@ function FAQ() {
                 quaerat, vero quasi esse maxime inventore earum.
               </AccordionContent>
             </AccordionItem>
-            {/* <AccordionItem
-              className="border px-2 rounded-lg border-gray-700 mt-2"
-              value="item-4"
-            >
-              <AccordionTrigger className="hover:no-underline">
-                Is there a mobile app?
-              </AccordionTrigger>
-              <AccordionContent className="text-gray-400">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Nesciunt, facere dolores rerum laborum possimus dolor
-                dignissimos, consectetur quas molestiae non ad harum cum
-                quaerat, vero quasi esse maxime inventore earum.
-              </AccordionContent>
-            </AccordionItem> */}
           </Accordion>
         </div>
       </div>

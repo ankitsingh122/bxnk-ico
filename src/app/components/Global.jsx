@@ -10,8 +10,8 @@ import Image from "next/image";
 function Global() {
   return (
     <>
-      <div className="xl:px-28 md:px-24 px-10">
-        <div className=" text-white bg-black my-10 p-4 rounded-lg border-t border-l border-t-gray-500 border-l-gray-500">
+      <div className="xl:px-28 md:px-24 px-10 py-10 shadow-2xl rounded-lg shadow-sky-500">
+        <div className=" text-white bg-black my-10 p-4 rounded-lg border-t border-l border-t-gray-500 border-l-gray-500 ">
           <div className="flex flex-col lg:flex-row lg:justify-between items-center">
             <div>
               <div className="lg:text-4xl text-xl md:text-2xl ">
@@ -67,13 +67,13 @@ function Global() {
           </div>
           <div className="text-white">
             <div className="flex justify-center text-4xl">Connect wallet</div>
-            <div className="text-xs flex justify-center text-center my-2">
+            <div className="text-xs flex justify-center text-center my-5">
               Earn more BXNK by referring your friends and community. Share your
               unique link below and receive 10% of all transactions realized
               with your link instantly.
             </div>
             <div>
-              <div className="flex justify-center items-center space-x-4">
+              <div className="flex flex-col md:flex-row items-center justify-center space-x-4">
                 <div>
                   <input
                     type="text"
@@ -81,10 +81,11 @@ function Global() {
                     className="bg-transparent border border-gray-500 rounded-lg px-2 w-60 h-8 text-xs "
                   />
                 </div>
-
-                <Button className="bg-white text-black hover:bg-white/100  lg:text-xs hover:shadow-2xl hover:shadow-white w-20 h-8">
-                  Copy
-                </Button>
+                <div className="">
+                  <Button className="bg-white text-black hover:bg-white/100 my-5  mr-4  lg:text-xs hover:shadow-2xl hover:shadow-white w-60 md:w-20 h-8">
+                    Copy
+                  </Button>
+                </div>
               </div>
               <Image />
             </div>

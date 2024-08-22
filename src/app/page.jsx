@@ -7,6 +7,7 @@ import Token from "./components/Token";
 import Roadmap from "./components/Roadmap";
 import Global from "./components/Global";
 import FAQ from "./components/FAQ";
+import Footer from "./components/Footer";
 export default function Main() {
   return (
   <>
@@ -15,9 +16,10 @@ export default function Main() {
   <Invest/>
   <Benefits/>
   <Token/>
-  {/* <Roadmap/> */}
+  <Roadmap/>
   <Global/>
   <FAQ/>
+  <Footer/>
   </>
   );
 }

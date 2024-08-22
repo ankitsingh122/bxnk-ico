@@ -38,7 +38,7 @@ function Benefits() {
               experience are our core values all in one easy to use app.
             </div>
           </div>
-          <div className="flex flex-col items-center lg:items-start mt-10 md:mt-0">
+          <div className="flex flex-col  items-center lg:items-start mt-10 md:mt-0 lg:-mt-4">
             <Image src={Three} width={150} />
             <div className="mt-6">Partner with us</div>
             <div className="text-[12px] mt-2 text-gray-400 max-w-xs break-words text-center lg:text-start">
@@ -50,21 +50,21 @@ function Benefits() {
           </div>
         </div>
 
-        <div className=" lg:flex lg:space-x-2 space-y-2 lg:space-y-0 mt-28 text-white">
+        <div className=" lg:flex lg:space-x-2  lg:space-y-0 mt-28 text-white">
           <div className="lg:flex lg:flex-col lg:justify-between">
             <div className="lg:flex lg:flex-col text-white items-center lg:items-start">
               <div className="text-3xl flex justify-center lg:justify-start">
                 Benefits of BXNK Token
               </div>
-              <div className="text-md mt-2 text-gray-400 text-center lg:text-start">
+              <div className="text-md mt-2 text-gray-400 text-center lg:text-start my-10 lg:my-1">
                 Owning BXNK tokens empowers you to be an active participant in
                 the future of finance. As the lifeblood of our innovative
                 platform, BXNK tokens unlock a world of opportunities and
                 benefits:
               </div>
             </div>
-            <div className="flex flex-col lg:flex-row lg:space-x-2 space-y-3 lg:space-y-0">
-              <div className="border border-gray-700 p-2 rounded-xl h-40 hover:bg-gradient-to-r from-white to-sky-400 hover:text-black ">
+            <div className="flex flex-col lg:flex-row lg:space-x-2 space-y-3 lg:space-y-0 px-2 md:px-0">
+              <div className="border border-gray-700 p-2 rounded-xl lg:h-40 hover:bg-gradient-to-r from-white to-sky-400 hover:text-black ">
                 <div className="bg-white rounded-full w-max p-2">
                   <Image src={status} />
                 </div>
@@ -75,7 +75,7 @@ function Benefits() {
                   its reach and offerings in the global market.
                 </div>
               </div>
-              <div className="border p-2 border-gray-700 rounded-xl h-40 hover:bg-gradient-to-r from-white to-sky-400 hover:text-black">
+              <div className="border p-2 border-gray-700 rounded-xl lg:h-40 hover:bg-gradient-to-r from-white to-sky-400 hover:text-black">
                 <div className="bg-white rounded-full w-max p-2">
                   <Image src={walletadd} />
                 </div>
@@ -89,7 +89,7 @@ function Benefits() {
             </div>
           </div>
 
-          <div className="flex flex-col lg:flex-row lg:space-x-2 space-y-2 lg:space-y-0 ">
+          <div className="flex flex-col lg:flex-row lg:space-x-2 space-y-2 lg:space-y-0 px-2 md:px-0 ">
             <div className="space-y-2">
               <div className="border p-2 border-gray-700 rounded-xl lg:w-52 lg:h-40 xl:w-80 hover:bg-gradient-to-r from-white to-sky-400 hover:text-black">
                 <div className="bg-white rounded-full w-max p-2">
