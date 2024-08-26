@@ -149,10 +149,10 @@ function Invest() {
               <div className="flex justify-between text-xs">
                 <span>???Header???</span>
                 <div className="flex space-x-2">
-                  <Image src={Ellipse27} width={20} />
-                  <Image src={Ellipse28} width={20} />
-                  <Image src={Ellipse29} width={20} />
-                  <Image src={Ellipse30} width={20} />
+                  <Image src={Ellipse27} width={20} alt="logo" />
+                  <Image src={Ellipse28} width={20} alt="logo" />
+                  <Image src={Ellipse29} width={20} alt="logo" />
+                  <Image src={Ellipse30} width={20} alt="logo" />
                 </div>
               </div>
               {/* <Separator className="bg-white/20" />{" "} */}

@@ -57,12 +57,17 @@ function Global() {
                 </Button>
               </div>
             </div>
-            <Image src={Four} width={250} />
+            <Image src={Four} width={250} alt="logo" />
           </div>
         </div>
         <div className="flex justify-between items-center">
           <div>
-            <Image src={Wallet} width={300} className="hidden lg:block" />
+            <Image
+              src={Wallet}
+              width={300}
+              alt="logo"
+              className="hidden lg:block"
+            />
           </div>
           <div className="text-white">
             <div className="flex justify-center text-4xl">Connect wallet</div>
@@ -90,7 +95,7 @@ function Global() {
             </div>
           </div>
           <div>
-            <Image src={any} className="hidden lg:block" />
+            <Image src={any} className="hidden lg:block" alt="logo" />
           </div>
         </div>
       </div>

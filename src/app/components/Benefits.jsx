@@ -20,7 +20,7 @@ function Benefits() {
         </div>
         <div className="flex flex-col items-center lg:flex-row justify-center lg:justify-between text-white space-x-5 mt-10">
           <div className="flex flex-col  items-center lg:items-start">
-            <Image src={s} width={100} className="-mt-2" />
+            <Image src={s} width={100} className="-mt-2" alt="logo" />
             <div className="mt-9 ">The Heart of Our Ecosystem</div>
             <div className="text-[12px] mt-2 text-gray-400 max-w-xs break-words text-center lg:text-start">
               The BXNK token is the driving force behind our platform. As a
@@ -29,7 +29,7 @@ function Benefits() {
             </div>
           </div>
           <div className="flex flex-col items-center lg:items-start mt-10 md:mt-0">
-            <Image src={Chain} width={150} />
+            <Image src={Chain} width={150} alt="logo" />
             <div className="mt-6  ">A Blockchain Platform</div>
             <div className="text-[12px] mt-2 text-gray-400 max-w-xs break-words text-center lg:text-start">
               BXNK offers a unified platform combining traditional finance and
@@ -39,7 +39,7 @@ function Benefits() {
             </div>
           </div>
           <div className="flex flex-col  items-center lg:items-start mt-10 md:mt-0 lg:-mt-4">
-            <Image src={Three} width={150} />
+            <Image src={Three} width={150} alt="logo" />
             <div className="mt-6">Partner with us</div>
             <div className="text-[12px] mt-2 text-gray-400 max-w-xs break-words text-center lg:text-start">
               Owning BXNK tokens grants exclusive platform access and governance
@@ -66,24 +66,24 @@ function Benefits() {
             <div className="flex flex-col lg:flex-row lg:space-x-2 space-y-3 lg:space-y-0 px-2 md:px-0">
               <div className="border border-gray-700 p-2 rounded-xl lg:h-40 hover:bg-gradient-to-r from-white to-sky-400 hover:text-black ">
                 <div className="bg-white rounded-full w-max p-2">
-                  <Image src={status} />
+                  <Image src={status} alt="logo" />
                 </div>
 
                 <div className="mt-8">Shared Growth</div>
                 <div className="text-[9px]">
-                  Directly benefit from the platform's success as BXNK expands
-                  its reach and offerings in the global market.
+                  Directly benefit from the platform&apos;s success as BXNK
+                  expands its reach and offerings in the global market.
                 </div>
               </div>
               <div className="border p-2 border-gray-700 rounded-xl lg:h-40 hover:bg-gradient-to-r from-white to-sky-400 hover:text-black">
                 <div className="bg-white rounded-full w-max p-2">
-                  <Image src={walletadd} />
+                  <Image src={walletadd} alt="logo" />
                 </div>
 
                 <div className="mt-8">Staking Rewards</div>
                 <div className="text-[9px]">
-                  Earn passive income by contributing to the platform's security
-                  and stability through staking.
+                  Earn passive income by contributing to the platform&apos;s
+                  security and stability through staking.
                 </div>
               </div>
             </div>
@@ -93,7 +93,7 @@ function Benefits() {
             <div className="space-y-2">
               <div className="border p-2 border-gray-700 rounded-xl lg:w-52 lg:h-40 xl:w-80 hover:bg-gradient-to-r from-white to-sky-400 hover:text-black">
                 <div className="bg-white rounded-full w-max p-2">
-                  <Image src={mouse} />
+                  <Image src={mouse} alt="logo" />
                 </div>
 
                 <div className="mt-8">Access & Privileges</div>
@@ -104,7 +104,7 @@ function Benefits() {
               </div>
               <div className="border p-2 border-gray-700 rounded-xl  lg:w-52 lg:h-40 xl:w-80 hover:bg-gradient-to-r from-white to-sky-400 hover:text-black">
                 <div className="bg-white rounded-full w-max p-2">
-                  <Image src={Vector} />
+                  <Image src={Vector} alt="logo" />
                 </div>
 
                 <div className="mt-8">Governance Influence</div>
@@ -118,7 +118,7 @@ function Benefits() {
             <div className="space-y-2">
               <div className="border p-2 border-gray-700 rounded-xl lg:w-52 lg:h-40 xl:w-80 hover:bg-gradient-to-r from-white to-sky-400 hover:text-black">
                 <div className="bg-white rounded-full w-max p-2">
-                  <Image src={crown} />
+                  <Image src={crown} alt="logo" />
                 </div>
 
                 <div className="mt-8">Exclusive Offerings</div>
@@ -129,7 +129,7 @@ function Benefits() {
               </div>
               <div className="border p-2 border-gray-700 rounded-xl lg:w-52 lg:h-40 xl:w-80 hover:bg-gradient-to-r from-white to-sky-400 hover:text-black">
                 <div className="bg-white rounded-full w-max p-1">
-                  <Image src={people} />
+                  <Image src={people} alt="logo" />
                 </div>
 
                 <div className="mt-8">Community Membership</div>

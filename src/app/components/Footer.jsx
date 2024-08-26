@@ -17,7 +17,7 @@ function Footer() {
   return (
     <>
       <div className="py-5 px-10 bg-black border-t border-t-gray-500 rounded-3xl ">
-        <Image src={Logo} width={100} />
+        <Image src={Logo} width={100} alt="logo" />
         <div className="flex flex-col md:flex-row md:justify-between lg:items-center">
           <div className="text-md md:text-xs lg:my-2 my-7 space-y-1">
             <div className="text-white">Country Licences</div>
@@ -145,13 +145,13 @@ function Footer() {
           <div className="text-white space-y-1">
             <div className="flex gap-1 items-center">
               <span>
-                <Image src={loc} width={10} />
+                <Image src={loc} width={10} alt="logo" />
               </span>{" "}
               Poland, Bartycka 22B/21a, 00-716 Warszawa
             </div>
             <div className="flex gap-1 items-center">
               <span>
-                <Image src={loc} width={10} />
+                <Image src={loc} width={10} alt="logo" />
               </span>
               UAE, Compass Building, Al Shohada Road, Rus Al Kaman
             </div>
@@ -161,7 +161,7 @@ function Footer() {
               <div>General</div>
               <div className="flex gap-1 items-center">
                 <span>
-                  <Image src={sms} width={10} />
+                  <Image src={sms} width={10} alt="logo" />
                 </span>
                 info@bxnk.com
               </div>
@@ -171,7 +171,7 @@ function Footer() {
               <div>Tech</div>
               <div className="flex gap-1 items-center">
                 <span>
-                  <Image src={sms} width={10} />
+                  <Image src={sms} width={10} alt="logo" />
                 </span>
                 support@bxnk.com
               </div>
