@@ -10,7 +10,7 @@ function Global() {
   return (
     <>
       <div className="xl:px-28 md:px-24 px-10 py-10 shadow-2xl rounded-lg shadow-sky-500">
-        <div className=" text-white bg-black my-10 p-4 rounded-lg border-t border-l border-t-gray-500 border-l-gray-500 ">
+        <div className=" text-white bg-black my-10 p-4 rounded-3xl border-t border-l border-t-gray-500 border-l-gray-500 ">
           <div className="flex flex-col lg:flex-row lg:justify-between items-center">
             <div>
               <div className="lg:text-4xl text-xl md:text-2xl ">
