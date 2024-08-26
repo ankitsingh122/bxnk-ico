@@ -61,18 +61,6 @@ function Invest() {
             <div className=" mt-5 text-white/75 flex justify-center lg:justify-start text-lg  font-normal  tracking-[-0.02em] ">
               Follow these steps to buy tokens.
             </div>
-            {/* <div className="flex items-center space-x-5">
-              <div className="text-white text-xs rounded-full border border-white px-3 py-3">
-                01
-              </div>
-              <div>
-                <h1 className="text-white text-md">Connect Your Wallet</h1>
-                <h1 className="text-white/50 text-xs">
-                  Click the “Connect Wallet” button to securely link your crypto
-                  wallet to the BXNK platform.
-                </h1>
-              </div>
-            </div> */}
             <div className="flex md:justify-center lg:justify-start lg:mr-10">
               <div className=" mt-5 space-y-5  ">
                 {points.map((point, index) => (
@@ -168,11 +156,11 @@ function Invest() {
                 </div>
               </div>
               {/* <Separator className="bg-white/20" />{" "} */}
-              <div className="flex space-x-2">
+              <div className="flex flex-col lg:flex-row space-y-4  lg:space-y-0 lg:space-x-2">
                 <div className="flex border border-gray-400 rounded-md">
                   <input
                     type="number"
-                    className="bg-transparent lg:w-36 w-20 md:w-56 text-white text-center"
+                    className="bg-transparent lg:w-36  w-11/12 text-white text-center"
                   />
                   <Select>
                     <SelectTrigger className="bg-black border border-black rounded-md flex-1 text-white">
@@ -198,11 +186,6 @@ function Invest() {
                 </Select>
                 <Select></Select>
               </div>
-              {/* <div className="flex space-x-2 justify-center mt-4">
-                <img className="w-8 h-8 text-red-500" />
-                <img className="w-8 h-8 text-blue-500" />
-                <img className="w-8 h-8 text-purple-500" />
-              </div> */}
               <Button className="w-full hover:bg-black border border-gray-400 bg-black">
                 Connect Wallet
               </Button>

@@ -2,12 +2,12 @@
 import { MenuIcon, X, Globe, Sun, Moon } from "lucide-react";
 import Image from "next/image";
 import Logo from "../assests/Logo.png";
-import buycrypto from "../assests/buycrypto.png";
+import buycrypto from "../assests/buycrypto.svg";
 import global from "../assests/global.svg";
 import { Button } from "@/components/ui/button";
-import sun from "../assests/sun.png"
-import moon from "../assests/moon.png"
-import { Tabs,  TabsList, TabsTrigger } from "@/components/ui/tabs";
+import sun from "../assests/sun.png";
+import moon from "../assests/moon.png";
+import { Tabs, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import {
   DropdownMenu,
   DropdownMenuTrigger,
@@ -126,7 +126,11 @@ function Header() {
               {" "}
               {/* <Image src={Logo} width={150} alt="Logo" />{" "} */}
             </span>
-            <Button className=" hover:bg-black" variant="ghost" onClick={toggleMenu}>
+            <Button
+              className=" hover:bg-black"
+              variant="ghost"
+              onClick={toggleMenu}
+            >
               <X className="p-1 bg-white rounded-sm" />
               <span className="sr-only">Close menu</span>
             </Button>

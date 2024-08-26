@@ -1,11 +1,10 @@
 import { Button } from "@/components/ui/button";
-import buycrypto from "../assests/buycrypto.png";
-import Four from "../assests/Four.svg"
+import buycrypto from "../assests/buycrypto.svg";
+import Four from "../assests/Four.svg";
 import Wallet from "../assests/Wallet.svg";
 import any from "../assests/any.svg";
 
 import Image from "next/image";
-
 
 function Global() {
   return (
@@ -99,4 +98,4 @@ function Global() {
   );
 }
 
-export default Global
+export default Global;

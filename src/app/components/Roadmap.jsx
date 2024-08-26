@@ -131,7 +131,7 @@ function Roadmap() {
         <div className="flex justify-center mt-4">
           <Progress
             value={progress}
-            className="w-[80%] h-2"
+            className="w-[80%] h-2 "
             style={{ backgroundColor: "skyblue" }}
           />
         </div>

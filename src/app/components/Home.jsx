@@ -1,5 +1,5 @@
 import Image from "next/image";
-import tickcircle from "../assests/tickcircle.png";
+import tickcircle from "../assests/tickcircle.svg";
 import fb from "../assests/fb.png";
 import insta from "../assests/insta.png";
 import telegram from "../assests/telegram.png";
@@ -22,19 +22,27 @@ function Home() {
             <div className=" xl:space-x-5 justify-center lg:justify-start  flex   flex-row space-x-3">
               <div className="flex items-center xl:space-x-3 space-x-1">
                 <Image src={tickcircle} alt="tick" width={20} />
-                <div className="xl:text-lg lg:text-xs text-xs font-thin">Audited</div>
+                <div className="xl:text-lg lg:text-xs text-xs font-thin">
+                  Audited
+                </div>
               </div>
               <div className="flex items-center xl:space-x-3 space-x-1">
                 <Image src={tickcircle} alt="tick" width={20} />
-                <div className="xl:text-lg lg:text-xs text-xs font-thin">Secured</div>
+                <div className="xl:text-lg lg:text-xs text-xs font-thin">
+                  Secured
+                </div>
               </div>
               <div className="flex items-center xl:space-x-3 space-x-1">
                 <Image src={tickcircle} alt="tick" width={20} />
-                <div className="xl:text-lg lg:text-xs text-xs font-thin">Verified</div>
+                <div className="xl:text-lg lg:text-xs text-xs font-thin">
+                  Verified
+                </div>
               </div>
               <div className="flex items-center xl:space-x-3 space-x-1">
                 <Image src={tickcircle} alt="tick" width={20} />
-                <div className="xl:text-lg lg:text-xs text-xs font-thin">Licensed</div>
+                <div className="xl:text-lg lg:text-xs text-xs font-thin">
+                  Licensed
+                </div>
               </div>
             </div>
 
