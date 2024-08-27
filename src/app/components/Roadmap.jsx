@@ -87,8 +87,10 @@ function Roadmap() {
 
   return (
     <>
-      <div className="bg-black/40 xl:bg-black/50 py-10 border-b border-b-gray-500 rounded-lg">
-        <div className="text-white text-4xl flex px-24">Roadmap</div>
+      <div className="bg-black/40 xl:bg-black/50 py-6 border-b border-b-gray-500 rounded-lg">
+        <div className="text-white text-4xl flex xl:px-32 lg:px-24 justify-center lg:justify-start -mb-24">
+          Roadmap
+        </div>
         <div
           ref={containerRef}
           className="w-full overflow-x-auto scrollbar-hide"
@@ -113,7 +115,7 @@ function Roadmap() {
                 <div className="my-8 text-center">
                   <p className="text-xs mt-28 text-white">{milestone.date}</p>
                 </div>
-                <div className="text-white mt- text-xl">{milestone.title}</div>
+                <div className="text-white text-xl">{milestone.title}</div>
                 <ul className="text-white mt-3 space-y-2">
                   {milestone.description.map((point, index) => (
                     <li

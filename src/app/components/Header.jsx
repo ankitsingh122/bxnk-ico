@@ -27,7 +27,7 @@ function Header() {
   };
   return (
     <>
-      <div className="xl:px-28 md:px-24 px-8 py-4 flex items-center justify-between w-full">
+      <div className="xl:px-32 lg:px-24 px-8 py-4 flex items-center justify-between w-full">
         <div className="flex items-center">
           <Image src={Logo} width={150} alt="Logo" />
           <div className="ml-8">
@@ -63,12 +63,12 @@ function Header() {
                   Company <ChevronDownIcon className="ml-2 h-4 w-4" />
                 </Button>
               </DropdownMenuTrigger>
-              <DropdownMenuContent>
+              <DropdownMenuContent className="bg-[#222227] text-white">
                 <DropdownMenuItem onSelect={handleOption1}>
-                  Option 1
+                  Staking{" "}
                 </DropdownMenuItem>
-                <DropdownMenuItem>Option 2</DropdownMenuItem>
-                <DropdownMenuItem>Option 3</DropdownMenuItem>
+                <DropdownMenuItem>Our Mission</DropdownMenuItem>
+                <DropdownMenuItem>News</DropdownMenuItem>
               </DropdownMenuContent>
             </DropdownMenu>
             <DropdownMenu>
@@ -77,12 +77,11 @@ function Header() {
                   Docs <ChevronDownIcon className="ml-2 h-4 w-4" />
                 </Button>
               </DropdownMenuTrigger>
-              <DropdownMenuContent>
+              <DropdownMenuContent className="bg-[#222227] text-white">
                 <DropdownMenuItem onClick={handleOption1}>
-                  Option 1
+                  White Paper
                 </DropdownMenuItem>
-                <DropdownMenuItem>Option 2</DropdownMenuItem>
-                <DropdownMenuItem>Option 3</DropdownMenuItem>
+                <DropdownMenuItem>Pitchdeck</DropdownMenuItem>
               </DropdownMenuContent>
             </DropdownMenu>
             <Image
@@ -101,6 +100,14 @@ function Header() {
           </div>
         </div>
       </div>
+
+
+
+
+
+
+
+
 
       {/* Mobile navbar */}
       <div className="lg:hidden relative">
@@ -122,10 +129,6 @@ function Header() {
           style={{ height: "100vh" }}
         >
           <div className="flex justify-between items-center p-4 border-b border-zinc-700">
-            <span>
-              {" "}
-              {/* <Image src={Logo} width={150} alt="Logo" />{" "} */}
-            </span>
             <Button
               className=" hover:bg-black"
               variant="ghost"
@@ -171,11 +174,11 @@ function Header() {
                     </Button>
                   </DropdownMenuTrigger>
                   <DropdownMenuContent>
-                    <DropdownMenuItem onSelect={handleOption1}>
-                      Option 1
+                    <DropdownMenuItem>
+                      Staking
                     </DropdownMenuItem>
-                    <DropdownMenuItem>Option 2</DropdownMenuItem>
-                    <DropdownMenuItem>Option 3</DropdownMenuItem>
+                    <DropdownMenuItem>Our Mission</DropdownMenuItem>
+                    <DropdownMenuItem>News</DropdownMenuItem>
                   </DropdownMenuContent>
                 </DropdownMenu>
               </div>
@@ -188,10 +191,9 @@ function Header() {
                   </DropdownMenuTrigger>
                   <DropdownMenuContent>
                     <DropdownMenuItem onClick={handleOption1}>
-                      Option 1
+                     White Paper
                     </DropdownMenuItem>
-                    <DropdownMenuItem>Option 2</DropdownMenuItem>
-                    <DropdownMenuItem>Option 3</DropdownMenuItem>
+                    <DropdownMenuItem>Pitchdeck</DropdownMenuItem>
                   </DropdownMenuContent>
                 </DropdownMenu>
               </div>

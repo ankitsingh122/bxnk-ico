@@ -11,6 +11,8 @@ import xlogo2 from "../assests/xlogo2.png";
 import xlogo from "../assests/xlogo.png";
 import iphone from "../assests/iphone.svg";
 import { Button } from "@/components/ui/button";
+import Link from "next/link";
+
 
 function Home() {
   return (
@@ -71,25 +73,52 @@ function Home() {
             <div className="flex  mt-5 lg:-mt-5   justify-center lg:justify-start">
               <div className="flex space-x-5 ">
                 <div className="flex items-center ">
-                  <Image src={fb} alt="tick" width={20} />
+                  <Image
+                    src={fb}
+                    alt="tick"
+                    width={20}
+                    className="cursor-pointer"
+                  />
                 </div>
                 <div className="flex items-center ">
-                  <Image src={insta} alt="tick" width={20} />
+                  <Link
+                    href=" https://www.instagram.com/officialbxnk?igsh=MWlheGM0dmw1bWVlcg==
+"
+                  >
+                    <Image src={insta} alt="tick" width={20} />
+                  </Link>{" "}
                 </div>
                 <div className="flex items-center ">
-                  <Image src={thred} alt="tick" width={20} />
+                  <Image
+                    src={thred}
+                    alt="tick"
+                    width={20}
+                    className="cursor-pointer"
+                  />
                 </div>
                 <div className="flex items-center ">
-                  <Image src={youtube} alt="tick" width={20} />
+                  <Link href="https://www.youtube.com/channel/UCD3S8Cb2vuag3CgeqBNyJVg">
+                    {" "}
+                    <Image src={youtube} alt="tick" width={20} />
+                  </Link>
                 </div>
                 <div className="flex items-center ">
-                  <Image src={x} alt="tick" width={20} />
+                  <Link href="https://x.com/OpsBxnk">
+                    <Image src={x} alt="tick" width={20} />
+                  </Link>
                 </div>
                 <div className="flex items-center ">
-                  <Image src={dscrd} alt="tick" width={26} />
+                  <Link href=" https://discord.gg/URRv3FUc">
+                    <Image src={dscrd} alt="tick" width={26} />
+                  </Link>
                 </div>
                 <div className="flex items-center">
-                  <Image src={telegram} alt="tick" width={26} />
+                  <Image
+                    src={telegram}
+                    alt="tick"
+                    width={26}
+                    className="cursor-pointer"
+                  />
                 </div>
               </div>
               <Image

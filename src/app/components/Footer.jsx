@@ -12,6 +12,8 @@ import youtube from "../assests/youtube.png";
 import { Separator } from "@/components/ui/separator";
 import sms from "../assests/sms.svg";
 import loc from "../assests/loc.svg";
+import Link from "next/link";
+
 
 function Footer() {
   return (
@@ -59,25 +61,52 @@ function Footer() {
               <div className=" font-semibold text-gray-300">Social media</div>
               <div className="flex space-x-5 ">
                 <div className="flex items-center ">
-                  <Image src={fb} alt="tick" width={25} />
+                  <Image
+                    src={fb}
+                    alt="tick"
+                    width={20}
+                    className="cursor-pointer"
+                  />
                 </div>
                 <div className="flex items-center ">
-                  <Image src={insta} alt="tick" width={25} />
+                  <Link
+                    href=" https://www.instagram.com/officialbxnk?igsh=MWlheGM0dmw1bWVlcg==
+"
+                  >
+                    <Image src={insta} alt="tick" width={20} />
+                  </Link>{" "}
                 </div>
                 <div className="flex items-center ">
-                  <Image src={thred} alt="tick" width={25} />
+                  <Image
+                    src={thred}
+                    alt="tick"
+                    width={20}
+                    className="cursor-pointer"
+                  />
                 </div>
                 <div className="flex items-center ">
-                  <Image src={youtube} alt="tick" width={25} />
+                  <Link href="https://www.youtube.com/channel/UCD3S8Cb2vuag3CgeqBNyJVg">
+                    {" "}
+                    <Image src={youtube} alt="tick" width={20} />
+                  </Link>
                 </div>
                 <div className="flex items-center ">
-                  <Image src={x} alt="tick" width={25} />
+                  <Link href="https://x.com/OpsBxnk">
+                    <Image src={x} alt="tick" width={20} />
+                  </Link>
                 </div>
                 <div className="flex items-center ">
-                  <Image src={dscrd} alt="tick" width={25} />
+                  <Link href=" https://discord.gg/URRv3FUc">
+                    <Image src={dscrd} alt="tick" width={26} />
+                  </Link>
                 </div>
                 <div className="flex items-center">
-                  <Image src={telegram} alt="tick" width={25} />
+                  <Image
+                    src={telegram}
+                    alt="tick"
+                    width={26}
+                    className="cursor-pointer"
+                  />
                 </div>
               </div>
             </div>
@@ -114,25 +143,52 @@ function Footer() {
                 <div className=" font-semibold text-gray-300">Social media</div>
                 <div className="flex space-x-2 ">
                   <div className="flex items-center ">
-                    <Image src={fb} alt="tick" width={15} />
+                    <Image
+                      src={fb}
+                      alt="tick"
+                      width={15}
+                      className="cursor-pointer"
+                    />
                   </div>
                   <div className="flex items-center ">
-                    <Image src={insta} alt="tick" width={15} />
+                    <Link
+                      href=" https://www.instagram.com/officialbxnk?igsh=MWlheGM0dmw1bWVlcg==
+"
+                    >
+                      <Image src={insta} alt="tick" width={15} />
+                    </Link>{" "}
                   </div>
                   <div className="flex items-center ">
-                    <Image src={thred} alt="tick" width={15} />
+                    <Image
+                      src={thred}
+                      alt="tick"
+                      width={15}
+                      className="cursor-pointer"
+                    />
                   </div>
                   <div className="flex items-center ">
-                    <Image src={youtube} alt="tick" width={15} />
+                    <Link href="https://www.youtube.com/channel/UCD3S8Cb2vuag3CgeqBNyJVg">
+                      {" "}
+                      <Image src={youtube} alt="tick" width={15} />
+                    </Link>
                   </div>
                   <div className="flex items-center ">
-                    <Image src={x} alt="tick" width={15} />
+                    <Link href="https://x.com/OpsBxnk">
+                      <Image src={x} alt="tick" width={15} />
+                    </Link>
                   </div>
                   <div className="flex items-center ">
-                    <Image src={dscrd} alt="tick" width={15} />
+                    <Link href=" https://discord.gg/URRv3FUc">
+                      <Image src={dscrd} alt="tick" width={15} />
+                    </Link>
                   </div>
                   <div className="flex items-center">
-                    <Image src={telegram} alt="tick" width={15} />
+                    <Image
+                      src={telegram}
+                      alt="tick"
+                      width={15}
+                      className="cursor-pointer"
+                    />
                   </div>
                 </div>
               </div>

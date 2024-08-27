@@ -10,7 +10,6 @@ import mouse from "../assests/mouse.svg";
 import Chain from "../assests/Chain.svg";
 import status from "../assests/status.svg";
 
-
 function Benefits() {
   return (
     <>
@@ -28,9 +27,9 @@ function Benefits() {
               exclusive benefits and powers the BXNK ecosystem.
             </div>
           </div>
-          <div className="flex flex-col items-center lg:items-start mt-10 md:mt-0">
+          <div className="flex flex-col items-center lg:items-start mt-10 md:mt-0 ">
             <Image src={Chain} width={150} alt="logo" />
-            <div className="mt-6  ">A Blockchain Platform</div>
+            <div className="   ">A Blockchain Platform</div>
             <div className="text-[12px] mt-2 text-gray-400 max-w-xs break-words text-center lg:text-start">
               BXNK offers a unified platform combining traditional finance and
               Web3. Our services include secure crypto trading, a user-friendly
@@ -40,7 +39,7 @@ function Benefits() {
           </div>
           <div className="flex flex-col  items-center lg:items-start mt-10 md:mt-0 lg:-mt-4">
             <Image src={Three} width={150} alt="logo" />
-            <div className="mt-6">Partner with us</div>
+            <div className="mt-4">Partner with us</div>
             <div className="text-[12px] mt-2 text-gray-400 max-w-xs break-words text-center lg:text-start">
               Owning BXNK tokens grants exclusive platform access and governance
               rights. Join us in shaping the future of finance. Invest in BXNK
@@ -64,7 +63,7 @@ function Benefits() {
               </div>
             </div>
             <div className="flex flex-col lg:flex-row lg:space-x-2 space-y-3 lg:space-y-0 px-2 md:px-0">
-              <div className="border border-gray-700 p-2 rounded-xl lg:h-40 hover:bg-gradient-to-r from-white to-sky-400 hover:text-black ">
+              <div className="border border-gray-700 p-2 rounded-xl  lg:h-40 hover:bg-gradient-to-r from-white to-sky-400 hover:text-black">
                 <div className="bg-white rounded-full w-max p-2">
                   <Image src={status} alt="logo" />
                 </div>
