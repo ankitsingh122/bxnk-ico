@@ -10,7 +10,7 @@ function FAQ() {
   return (
     <>
       <div className="lg:px-24 xl:px-32 px-10 py-12 bg-black/70">
-        <div className="text-white flex justify-center text-center md:text-start text-4xl my-10 ">
+        <div className="text-white flex justify-center  text-center md:text-start text-4xl my-10 ">
           Frequently Asked Questions
         </div>
         <div className="text-gray-400 text-sm ">General Questions</div>

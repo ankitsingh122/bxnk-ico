@@ -128,14 +128,14 @@ function Header() {
           } transition-transform duration-300 ease-in-out z-40`}
           style={{ height: "100vh" }}
         >
-          <div className="flex justify-between items-center p-4 border-b border-zinc-700">
+          <div className="flex justify-end items-center p-4 border-b border-zinc-700">
             <Button
               className=" hover:bg-black"
               variant="ghost"
               onClick={toggleMenu}
             >
               <X className="p-1 bg-white rounded-sm" />
-              <span className="sr-only">Close menu</span>
+              <span className="sr-only ">Close menu</span>
             </Button>
           </div>
 

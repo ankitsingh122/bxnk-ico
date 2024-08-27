@@ -11,17 +11,17 @@ function Global() {
   return (
     <>
       <div className="lg:px-24 xl:px-32 px-10 py-10 shadow-2xl rounded-lg shadow-sky-500 font-">
-        <div className=" text-white bg-black my-10 p-4 rounded-3xl border-t border-l border-t-gray-500 border-l-gray-500 md:px-10 lg:px-0  lg:pl-10 md:pt-10">
+        <div className=" text-white bg-black my-10 p-4 rounded-3xl border-t border-l border-t-gray-500 border-l-gray-500 px-10 lg:px-0  lg:pl-10 pt-10">
           <div className="flex flex-col lg:flex-row lg:justify-between  items-center">
-            <div>
-              <div className="lg:text-4xl text-4xl font-medium ">
+            <div> 
+              <div className="lg:text-4xl text-4xl text-center md:text-start  font-medium">
                   Join the fastest growing global phenomena
               </div>
-              <div className="text-xs my-2 text-gray-400 flex justify-center md:justify-start">
+              <div className="text-xs my-2 text-center md:text-start text-gray-400 flex justify-center md:justify-start py-2">
                 A decentralized, distributed Blockchain system providing
                 businesses
               </div>
-              <div className="flex flex-col md:flex-row md:justify-between items-center md:items-start py-2 space-y-2 md:space-y-0  lg:px-0">
+              <div className="flex flex-col md:flex-row md:justify-between items-center md:items-start py-2 space-y-3 md:space-y-0  lg:px-0">
                 <div className="flex flex-col md:border-l md:px-4   border-l-white/30 items-center md:items-start">
                   <div className="lg:text-3xl text-4xl ">29,7M</div>
                   <div className="lg:text-[9px] text-[10px]  text-gray-400">

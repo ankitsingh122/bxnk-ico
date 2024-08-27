@@ -55,7 +55,7 @@ function Benefits() {
               <div className="text-3xl flex justify-center lg:justify-start">
                 Benefits of BXNK Token
               </div>
-              <div className="text-md mt-2 text-gray-400 text-center lg:text-start my-10 lg:my-1">
+              <div className="text-md mt-2 px-5 lg:px-0 text-gray-400 text-center lg:text-start my-10 lg:my-1">
                 Owning BXNK tokens empowers you to be an active participant in
                 the future of finance. As the lifeblood of our innovative
                 platform, BXNK tokens unlock a world of opportunities and
