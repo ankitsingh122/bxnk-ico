@@ -132,7 +132,7 @@ function Roadmap() {
         <div className="flex justify-center mt-4">
           <div className="w-[80%] h-2 bg-gray-700 rounded-full overflow-hidden">
             <div
-              className="h-full bg-cyan-300"
+              className="h-full bg-blue-600"
               style={{ width: `${progress}%` }}
             ></div>
           </div>

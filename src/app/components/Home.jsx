@@ -24,25 +24,25 @@ function Home() {
             <div className=" xl:space-x-5 justify-center lg:justify-start  flex   flex-row space-x-3">
               <div className="flex items-center xl:space-x-3 space-x-1">
                 <Image src={tickcircle} alt="tick" width={20} />
-                <div className="xl:text-lg lg:text-xs text-xs font-thin">
+                <div className="xl:text-lg lg:text-xs text-xs font-light">
                   Audited
                 </div>
               </div>
               <div className="flex items-center xl:space-x-3 space-x-1">
                 <Image src={tickcircle} alt="tick" width={20} />
-                <div className="xl:text-lg lg:text-xs text-xs font-thin">
+                <div className="xl:text-lg lg:text-xs text-xs font-light">
                   Secured
                 </div>
               </div>
               <div className="flex items-center xl:space-x-3 space-x-1">
                 <Image src={tickcircle} alt="tick" width={20} />
-                <div className="xl:text-lg lg:text-xs text-xs font-thin">
+                <div className="xl:text-lg lg:text-xs text-xs font-light">
                   Verified
                 </div>
               </div>
               <div className="flex items-center xl:space-x-3 space-x-1">
                 <Image src={tickcircle} alt="tick" width={20} />
-                <div className="xl:text-lg lg:text-xs text-xs font-thin">
+                <div className="xl:text-lg lg:text-xs text-xs font-light">
                   Licensed
                 </div>
               </div>
@@ -130,7 +130,6 @@ function Home() {
             </div>
           </div>
 
-         
           <div className=" lg:flex-1 lg:flex lg:justify-end ">
             <Image
               src={iphone}

@@ -139,7 +139,7 @@ function Token() {
                         <span className="rounded-full bg-[rgba(138,42,244,1)] p-1 shadow-[0_0_10px_2px_rgba(138,42,244,0.8)]"></span>
                         <h1 className="text-[8px] mx-1 text-white">Reserve</h1>
                       </div>
-                      <div className="text-[8px] text-white mt-1 ml-24">
+                      <div className="text-[8px] text-white mt-1 ml-20">
                         15%
                       </div>
                     </div>
