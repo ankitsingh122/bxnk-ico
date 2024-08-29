@@ -49,22 +49,22 @@ function Roadmap() {
       description: ["Further improvements"],
       date: "Q6 2024",
     },
-    {
-      id: 7,
-      title: "Feature Expansion",
-      description: ["Further improvements"],
-      date: "Q6 2024",
-    },
-    {
-      id: 8,
-      title: "Feature Expansion",
-      description: ["Further improvements"],
-      date: "Q6 2024",
-    },
+    // {
+    //   id: 7,
+    //   title: "Feature Expansion",
+    //   description: ["Further improvements"],
+    //   date: "Q6 2024",
+    // },
+    // {
+    //   id: 8,
+    //   title: "Feature Expansion",
+    //   description: ["Further improvements"],
+    //   date: "Q6 2024",
+    // },
   ];
 
   const milestoneCount = milestones.length;
-  const milestoneWidth = 320;
+  const milestoneWidth = 330;
   const containerWidth = milestoneCount * milestoneWidth;
 
   const containerRef = useRef(null);

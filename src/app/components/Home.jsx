@@ -130,7 +130,7 @@ function Home() {
             </div>
           </div>
 
-          {/* Right Content (Phone Image) */}
+         
           <div className=" lg:flex-1 lg:flex lg:justify-end ">
             <Image
               src={iphone}

@@ -20,7 +20,7 @@ function Benefits() {
         <div className="flex flex-col items-center lg:flex-row justify-center lg:justify-between text-white space-x-5 mt-10">
           <div className="flex flex-col  items-center lg:items-start">
             <Image src={s} width={100} className="-mt-2" alt="logo" />
-            <div className="mt-9 ">The Heart of Our Ecosystem</div>
+            <div className="xl:mt-9 mt-5 ">The Heart of Our Ecosystem</div>
             <div className="text-[12px] mt-2 text-gray-400 max-w-xs break-words text-center lg:text-start">
               The BXNK token is the driving force behind our platform. As a
               utility token built on Ethereum, it provides holders with
@@ -39,7 +39,7 @@ function Benefits() {
           </div>
           <div className="flex flex-col  items-center lg:items-start mt-10 md:mt-0 lg:-mt-4">
             <Image src={Three} width={150} alt="logo" />
-            <div className="mt-4">Partner with us</div>
+            <div className="xl:mt-4">Partner with us</div>
             <div className="text-[12px] mt-2 text-gray-400 max-w-xs break-words text-center lg:text-start">
               Owning BXNK tokens grants exclusive platform access and governance
               rights. Join us in shaping the future of finance. Invest in BXNK

@@ -53,7 +53,7 @@ function Header() {
           <div className="flex items-center xl:gap-2">
             <Button
               variant="ghost"
-              className="text-white lg:text-xs hidden lg:block"
+              className="text-white lg:text-xs hidden lg:block "
             >
               ICO
             </Button>
@@ -89,7 +89,7 @@ function Header() {
               alt="globe"
               width={20}
               height={20}
-              className="mx-2"
+              className="mx-2 cursor-pointer"
             />
             <Button className="bg-white text-black hover:bg-white/100 ml-2 lg:text-xs hover:shadow-2xl hover:shadow-white">
               Invest in ICO{" "}
@@ -202,7 +202,7 @@ function Header() {
                 alt="globe"
                 width={20}
                 height={20}
-                className="mx-3"
+                className="mx-3 cursor-pointer"
               />
               <Button className="bg-white text-black hover:bg-white/100 ml-2 lg:text-xs hover:shadow-2xl hover:shadow-white">
                 Invest in ICO{" "}

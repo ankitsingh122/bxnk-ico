@@ -20,6 +20,8 @@ import sample from "../assests/sample.svg";
 
 function Invest() {
   const [showVideo, setShowVideo] = useState(false);
+  const [amount, setAmount] = useState(0); 
+  const [currency, setCurrency] = useState("usd"); 
 
   const handleVideoClick = () => {
     setShowVideo(true);
@@ -27,6 +29,24 @@ function Invest() {
 
   const handleCloseVideo = () => {
     setShowVideo(false);
+  };
+
+  const handleAmountChange = (e) => {
+    setAmount(e.target.value);
+  };
+
+  const handleCurrencyChange = (value) => {
+    setCurrency(value);
+  };
+
+
+  const calculateBXNKReceived = () => {
+    if (currency === "usd") {
+      return amount * 3; 
+    } else if (currency === "eur") {
+      return amount * 4; 
+    }
+    return 0;
   };
 
   const points = [
@@ -161,14 +181,14 @@ function Invest() {
               <div className="relative">
                 <div className="h-4 bg-gray-700 rounded-full overflow-hidden">
                   <div
-                    className="h-full bg-blue-500"
+                    className="h-full bg-sky-400"
                     style={{ width: "50%" }}
                   />
                 </div>
                 <div className="absolute inset-0 flex justify-center items-center text-black font-bold text-xs">
                   50%
                 </div>
-                <div className="absolute inset-0 flex justify-between items-center px-2 text-xs text-gray-400">
+                <div className="absolute inset-0 flex justify-between items-center px-2 text-xs text-gray-100">
                   <span>0</span>
                   <span>80,000,000</span>
                 </div>
@@ -197,8 +217,10 @@ function Invest() {
                   <input
                     type="number"
                     className="bg-transparent lg:w-36 w-11/12 text-white text-center"
+                    value={amount}
+                    onChange={handleAmountChange}
                   />
-                  <Select>
+                  <Select onValueChange={handleCurrencyChange}>
                     <SelectTrigger className="bg-black border border-black rounded-md flex-1 text-white">
                       <SelectValue placeholder="USD" />
                     </SelectTrigger>
@@ -210,18 +232,18 @@ function Invest() {
                 </div>
                 <Select>
                   <SelectTrigger className="bg-black border border-gray-400 flex-1 text-white">
-                    <SelectValue placeholder="BXNK Received 000" />
+                    <SelectValue
+                      placeholder={`BXNK Received ${calculateBXNKReceived()}`}
+                    />
                   </SelectTrigger>
                   <SelectContent>
                     <SelectItem value="BXNK Received 000">
-                      BXNK Received 000
+                      BXNK Received {calculateBXNKReceived()}
                     </SelectItem>
-                    <SelectItem value="eur">EUR</SelectItem>
                   </SelectContent>
                 </Select>
-                <Select></Select>
               </div>
-              <Button className="w-full hover:bg-black border border-gray-400 bg-black">
+              <Button className="w-full hover:bg-black border border-gray-400 bg-black hover:border-cyan-600 hover:text-cyan-500 hover:bg-gray-700">
                 Connect Wallet
               </Button>
             </div>
