@@ -1,5 +1,4 @@
 "use client";
-import { Progress } from "@/components/ui/progress";
 import React, { useState, useRef, useEffect } from "react";
 
 function Roadmap() {
@@ -71,15 +70,15 @@ function Roadmap() {
   const containerRef = useRef(null);
   const [progress, setProgress] = useState(0);
 
-  const calculateProgress = () => {
-    const container = containerRef.current;
-    const scrollLeft = container.scrollLeft;
-    const visibleWidth = container.offsetWidth;
-    const maxScrollLeft = container.scrollWidth - visibleWidth;
-    const currentProgress =
-      ((maxScrollLeft - scrollLeft) / maxScrollLeft) * 100;
-    setProgress(currentProgress);
-  };
+ const calculateProgress = () => {
+   const container = containerRef.current;
+   const scrollLeft = container.scrollLeft;
+   const visibleWidth = container.offsetWidth;
+   const maxScrollLeft = container.scrollWidth - visibleWidth;
+   const currentProgress = (scrollLeft / maxScrollLeft) * 100;
+   setProgress(currentProgress);
+ };
+
 
   useEffect(() => {
     calculateProgress();
@@ -131,11 +130,12 @@ function Roadmap() {
           </div>
         </div>
         <div className="flex justify-center mt-4">
-          <Progress
-            value={progress}
-            className="w-[80%] h-2 "
-            style={{ backgroundColor: "skyblue" }}
-          />
+          <div className="w-[80%] h-2 bg-gray-700 rounded-full overflow-hidden">
+            <div
+              className="h-full bg-cyan-300"
+              style={{ width: `${progress}%` }}
+            ></div>
+          </div>
         </div>
       </div>
     </>

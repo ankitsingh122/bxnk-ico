@@ -15,7 +15,7 @@ function FAQ() {
         </div>
         <div className="text-gray-400 text-sm ">General Questions</div>
         <div className="text-white">
-          <Accordion type="single" collapsible className="w-full mt-4">
+          <Accordion type="single" collapsible className="w-full mt-4 ">
             <AccordionItem
               className="border px-2 rounded-lg border-gray-700"
               value="item-1"
