@@ -19,7 +19,6 @@ function Home() {
     <>
       <div className="relative text-white xl:mt-28 lg:mt-24 px-8  xl:px-32 lg:px-24  py-2 ">
         <div className="lg:flex mt-10 lg:justify-between lg:items-start md:flex md:flex-col lg:flex-row ">
-          {/* Left Content (tickcircle to button) */}
           <div className="lg:flex-1 lg:max-w-[50%]">
             <div className=" xl:space-x-5 justify-center lg:justify-start  flex   flex-row space-x-3">
               <div className="flex items-center xl:space-x-3 space-x-1">
