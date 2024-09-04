@@ -114,7 +114,7 @@ function Roadmap() {
                 <div className="my-8 text-center">
                   <p className="text-xs mt-28 text-white">{milestone.date}</p>
                 </div>
-                <div className="text-white text-xl">{milestone.title}</div>
+                <div className="text-white text-xl ">{milestone.title}</div>
                 <ul className="text-white mt-3 space-y-2">
                   {milestone.description.map((point, index) => (
                     <li

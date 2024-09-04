@@ -49,6 +49,11 @@ function Invest() {
     return 0;
   };
 
+
+
+
+  
+
   const points = [
     {
       id: "01",
@@ -243,7 +248,7 @@ function Invest() {
                   </SelectContent>
                 </Select>
               </div>
-              <Button className="w-full hover:bg-black border border-gray-400 bg-black hover:border-cyan-600 hover:text-cyan-500 hover:bg-gray-700">
+              <Button className="w-full  border border-gray-400 bg-black hover:border-cyan-600 hover:text-cyan-500 hover:bg-gray-700">
                 Connect Wallet
               </Button>
             </div>

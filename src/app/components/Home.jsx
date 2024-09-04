@@ -7,8 +7,8 @@ import dscrd from "../assests/dscrd.png";
 import thred from "../assests/thred.png";
 import x from "../assests/x.png";
 import youtube from "../assests/youtube.png";
-import xlogo2 from "../assests/xlogo2.png";
-import xlogo from "../assests/xlogo.png";
+import xlogo2 from "../assests/xlogo2.svg";
+import xlogo from "../assests/xlogo.svg";
 import iphone from "../assests/iphone.svg";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
@@ -61,12 +61,12 @@ function Home() {
               <Image
                 src={xlogo}
                 alt="phone"
-                className="object-contain lg:mx-52 xl:mx-64   hidden lg:block"
-                width={120}
+                className="object-contain lg:ml-52 xl:mx-64   hidden lg:block"
+                width={100}
               />
             </div>
 
-            <h1 className="mt-5 lg:-mt-10  md:text-xl lg:text-sm font-medium flex justify-center lg:justify-start">
+            <h1 className="mt-5 lg:-mt-5  md:text-xl lg:text-sm font-medium flex justify-center lg:justify-start">
               Follow Us:
             </h1>
             <div className="flex  mt-5 lg:-mt-5   justify-center lg:justify-start">
@@ -124,7 +124,7 @@ function Home() {
                 src={xlogo2}
                 alt="phone"
                 className="object-contain hidden lg:block xl:ml-16 lg:ml-8"
-                width={100}
+                width={80}
               />
             </div>
           </div>

@@ -18,7 +18,7 @@ import Link from "next/link";
 function Footer() {
   return (
     <>
-      <div className="py-5 px-10 bg-black border-t border-t-gray-500 rounded-3xl ">
+      <div className="py-5 px-10 bg-black border-t border-t-gray-500 rounded-t-3xl ">
         <Image src={Logo} width={100} alt="logo" />
         <div className="flex flex-col md:flex-row md:justify-between lg:items-center">
           <div className="text-md md:text-xs lg:my-2 my-7 space-y-1">

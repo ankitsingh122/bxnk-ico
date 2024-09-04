@@ -15,7 +15,7 @@ import {
   DropdownMenuItem,
 } from "@/components/ui/dropdown-menu";
 import { useState } from "react";
-
+import { useRouter } from "next/navigation";
 function Header() {
   const [isOpen, setIsOpen] = useState(false);
 
@@ -25,11 +25,18 @@ function Header() {
   const toggleMenu = () => {
     setIsOpen(!isOpen);
   };
+  const router = useRouter();
+  const handleStaking = () => {
+    router.push("/Staking");
+  };
+  const handleHome = () => {
+    router.push("/");
+  };
   return (
     <>
       <div className="xl:px-32 lg:px-24 px-8 py-4 flex items-center justify-between w-full">
         <div className="flex items-center">
-          <Image src={Logo} width={150} alt="Logo" />
+          <Image src={Logo} width={150} alt="Logo"  onClick={handleHome} className=" cursor-pointer"/>
           <div className="ml-8">
             <Tabs
               defaultValue="Exchange"
@@ -64,7 +71,7 @@ function Header() {
                 </Button>
               </DropdownMenuTrigger>
               <DropdownMenuContent className="bg-[#222227] text-white">
-                <DropdownMenuItem onSelect={handleOption1}>
+                <DropdownMenuItem onSelect={handleStaking}>
                   Staking{" "}
                 </DropdownMenuItem>
                 <DropdownMenuItem>Our Mission</DropdownMenuItem>
@@ -174,7 +181,7 @@ function Header() {
                     </Button>
                   </DropdownMenuTrigger>
                   <DropdownMenuContent>
-                    <DropdownMenuItem>
+                    <DropdownMenuItem onClick={handleStaking}>
                       Staking
                     </DropdownMenuItem>
                     <DropdownMenuItem>Our Mission</DropdownMenuItem>

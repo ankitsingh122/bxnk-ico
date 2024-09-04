@@ -64,7 +64,7 @@ function Benefits() {
             </div>
 
             <div className="lg:flex lg:space-x-2 px-2 md:px-0">
-              <div className="border border-gray-700 p-2 rounded-xl lg:w-full lg:h-40 xl:w-full hover:bg-gradient-to-r from-white to-sky-400 hover:text-black flex flex-col ">
+              <div className="border border-gray-700 p-2 rounded-xl lg:w-full lg:h-40 xl:w-full hover:bg-gradient-to-r from-white to-sky-400 hover:text-black  flex flex-col ">
                 <div className="bg-white rounded-full w-max p-2">
                   <Image src={status} alt="logo" />
                 </div>
@@ -76,7 +76,7 @@ function Benefits() {
               </div>
               <div className="border p-2 border-gray-700 my-2 lg:my-0  rounded-xl lg:w-full lg:h-40 xl:w-full hover:bg-gradient-to-r from-white to-sky-400 hover:text-black flex flex-col ">
                 <div className="bg-white rounded-full w-max p-2">
-                  <Image src={walletadd} alt="logo" />
+                  <Image src={walletadd} alt="logo"/>
                 </div>
                 <div className="mt-8 text-sm">Staking Rewards</div>
                 <div className="text-[9px] mt-1">
